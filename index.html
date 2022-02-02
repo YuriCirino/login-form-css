@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="icon" hrerf="/images/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Camp.in - Login Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container--left">
+                <div class="header">
+                    <img src="./images/logo.svg" alt="" />
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="line form-title">
+                            <img src="/images/log-in.svg" alt="" /><span
+                                >Faça seu Login</span
+                            >
+                        </div>
+                        <div class="line form-subtitle">
+                            <span>Entre com suas informações de cadastro</span>
+                        </div>
+                        <div class="line">
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <div class="input-container">
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Digite seu email"
+                                    />
+                                    <img src="./images/mail.svg" id="icon-mail" class="show"alt="" />
+                                    <img src="./images/mail-focus.svg" id="icon-mail-focus" class="hide" alt="" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="input-group">
+                                <label for="password">Senha</label>
+                                <div class="input-container">
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        placeholder="Digite seu email"
+                                    />
+                                    <img src="./images/lock.svg" id="icon-lock" class="show"alt="" />
+                                    <img src="./images/lock-focus.svg" id="icon-lock-focus" class="hide" alt="" />
+                                    <img src="./images/eye.svg" id="icon-eye" alt="">
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="remember-container">
+                                <div class="remember-group">
+                                    <label class="checkbox-container" for="remember">Lembrar me
+                                        <input type="checkbox" name="remember" id="remember">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                </div>
+                                
+                                <a href="#">Esqueci a minha senha?</a>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="line"><button>Entrar</button></div>
+                        <div class="line register">Não tem uma conta? <strong> &nbsp;&nbsp;<a href="#">Registre-se</a></strong><span>
+
+                        </span></div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="container--right"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

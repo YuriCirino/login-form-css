@@ -1,0 +1,236 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    outline: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+html {
+    height: 100%;
+    font-size: 14px;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background);
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+.container--left {
+    width: 50%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+}
+
+.container--right {
+    background-image: url("./images/side-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+    width: 50%;
+}
+
+.container--left .header {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.container--left .form {
+    flex-grow: 1;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: var(--form-background);
+    border-radius: 4px;
+    padding: 55px 10%;
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.form-title span {
+    font-size: 1.7rem;
+    color: var(--text-title);
+    font-weight: 600;
+}
+.form-title img {
+    font-size: 1.25rem;
+    color: var(--text-title);
+    margin-right: 20px;
+}
+.form-subtitle span {
+    margin-bottom: 20px;
+}
+
+.form-subtitle span {
+    font-size: 1rem;
+    color: var(--text-base);
+}
+.input-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input-group label {
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+    color: var(--text-base);
+}
+.input-container {
+    position: relative;
+    width: 100%;
+}
+#icon-mail-focus,
+#icon-lock-focus {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10px;
+}
+#icon-mail,
+#icon-lock {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10px;
+}
+#icon-eye {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 1rem;
+    height: 45px;
+    width: 100%;
+    border: solid 1px #868686;
+    background-color: transparent;
+    border-radius: 4px;
+    padding-left: 40px;
+}
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: solid 2px var(--primary-color);
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 30px;
+}
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+    border: none;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    border: solid 1px var(--text-title);
+    background-color: var(--form-background);
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* 
+    utilizado o metodo de criar checkbox personalizado da w3schools
+    https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
+
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--background);
+    border-radius: 1px;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--background);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.remember-container {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.register {
+    font-size: 1rem;
+    margin-top: 20px;
+    justify-content: center;
+}
