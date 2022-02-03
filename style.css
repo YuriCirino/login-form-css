@@ -234,3 +234,98 @@ button {
     margin-top: 20px;
     justify-content: center;
 }
+
+@media (max-width:1100px) {
+    .container--left {
+        width: 65%;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container--right {
+        background-image: url("./images/side-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
+        width: 35%;
+    }
+    
+    
+}
+@media (max-width:950px){
+    .remember-container {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.95rem;
+    }
+    
+    .register {
+        font-size: 0.95rem;
+        margin-top: 20px;
+        justify-content: center;
+    }   
+}
+
+@media (max-width:720px){
+    .container--left {
+        width: 100%;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container--right {
+        background-image: url("./images/side-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
+        width: 0%;
+    } 
+}
+
+@media (max-width:600px){
+    .container--left {
+        width: 100%;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container--right {
+        background-image: url("./images/side-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
+        width: 0%;
+    }
+    html{
+        font-size: 12px;
+    }
+    .remember-container {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+    }
+    form{
+        padding: 35px 8%;
+        width: 80%;
+    }
+    .header img{
+        height: 45px;
+    }
+    
+    
+
+}
+
+
